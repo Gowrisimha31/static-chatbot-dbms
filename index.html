@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Support Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Customer Login -->
+<div id="login-box" style="
+  width:380px;
+  margin:50px auto;
+  background:#fffaf5;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+">
+  <h3>Customer Login</h3>
+  <input id="customer-name" placeholder="Enter your name"
+    style="width:90%;padding:10px;margin-bottom:10px;">
+  <br>
+  <button onclick="startChat()">Start Chat</button>
+</div>
+
+
+<div id="chat-section" style="display:none;">
+<div class="chat-container">
+  <div class="chat-header">
+    <div class="title">Support Chat</div>
+    <div class="subtitle">We’re here to help</div>
+    <button id="logout-btn" onclick="logout()">Logout</button>
+
+  </div>
+  </div>
+  <div id="admin-box" style="
+  width:380px;
+  margin:20px auto;
+  background:#ede4d8;
+  padding:12px;
+  border-radius:12px;
+  font-size:12px;
+">
+  <b>Today's Complaints (Admin View)</b>
+  <ul id="complaint-list"></ul>
+  <div id="admin-box" style="
+  width:380px;
+  margin:20px auto;
+  background:#ede4d8;
+  padding:12px;
+  border-radius:12px;
+  font-size:12px;
+">
+  <b>Today's Complaints (Admin View)</b>
+
+  <ul id="complaint-list"></ul>
+
+  <!-- ADD BUTTON HERE -->
+  <button onclick="clearAllComplaints()" style="
+    margin-top:10px;
+    padding:6px 10px;
+    border:none;
+    border-radius:6px;
+    background:#c7b7a3;
+    cursor:pointer;
+  ">
+    Clear Today's Data
+  </button>
+</div>
+
+</div>
+
+
+
+  <div id="chat-box" class="chat-box"></div>
+
+  <div id="options" class="options"></div>
+</div>
+<!-- Admin Log View -->
+<div id="log-box" style="
+  width:380px;
+  margin:20px auto;
+  background:#fffaf5;
+  padding:12px;
+  border-radius:12px;
+  font-size:12px;
+">
+  <b>Session Log (Admin View)</b>
+  <pre id="log-output"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

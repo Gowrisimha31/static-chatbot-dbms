@@ -1,0 +1,85 @@
+body {
+  background: #f6f1eb;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.chat-container {
+  width: 380px;
+  margin: 50px auto;
+  background: #fffaf5;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.chat-header {
+  background: #d8cfc4;
+  padding: 18px;
+  text-align: center;
+}
+
+.chat-header .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3b3026;
+}
+
+.chat-header .subtitle {
+  font-size: 12px;
+  color: #6f6155;
+}
+
+.chat-box {
+  height: 360px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.bot {
+  background: #ede4d8;
+  color: #3b3026;
+  padding: 10px 14px;
+  border-radius: 14px;
+  margin-bottom: 8px;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.user {
+  background: #cbb8a9;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 14px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.options button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-top: 1px solid #e0d6ca;
+  background: #fffaf5;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.options button:hover {
+  background: #ede4d8;
+}
+#logout-btn {
+  float: right;
+  background: #c7b7a3;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#logout-btn:hover {
+  background: #b3a089;
+}
